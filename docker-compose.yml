@@ -1,29 +1,29 @@
 version: '3'
 services:
   movies:
-    image: vemula7777/repomovies:latest
+    image: vemula7777/todaytrain:latest
     ports:
-      - "80:80"
+      - "30:80"
     deploy:
-      replicas: 3
+      replicas: 2
 
   train:
-    image: vemula7777/repotrain:latest
+    image: vemula7777/todaymovies:latest
     ports:
-      - "81:80"
+      - "31:80"
     deploy:
-      replicas: 3
+      replicas: 2
 
   dth:
-    image: vemula7777/repodth:latest
+    image: vemula7777/todaydth:latest
     ports:
-      - "82:80"
+      - "32:80"
     deploy:
-      replicas: 3
+      replicas: 2
 
   recharge:
-    image: vemula7777/reporecharge:latest
+    image: vemula7777/todayrecharge:latest
     ports:
-      - "83:80"
+      - "33:80"
     deploy:
-      replicas: 3
+      replicas: 2
