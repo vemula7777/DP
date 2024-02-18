@@ -1,14 +1,14 @@
 version: '3'
 services:
   movies:
-    image: vemula7777/todaytrain:latest
+    image: vemula7777/trainrepo:latest
     ports:
       - "30:80"
     deploy:
       replicas: 2
 
   train:
-    image: vemula7777/todaymovies:latest
+    image: vemula7777/moviesrepo:latest
     ports:
       - "31:80"
     deploy:
